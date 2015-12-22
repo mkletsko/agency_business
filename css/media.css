@@ -1,0 +1,109 @@
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Styles */
+}
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+  /* Styles */
+}
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+  /* Styles */
+}
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Styles */
+}
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* Styles */
+}
+/* iPads (portrait) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /*nav*/
+  nav {
+    /*nav-content*/
+    /*END nav-content*/
+  }
+  nav .nav-content {
+    position: relative;
+    padding: 0;
+    z-index: 1000;
+    /*navigation*/
+  }
+  nav .nav-content .navigation-content {
+    position: relative;
+    /*navigation*/
+    /*END navigation*/
+  }
+  nav .nav-content .navigation-content .navigation {
+    position: absolute;
+    background-color: red;
+    max-width: 220px;
+    right: 0;
+    top: 50px;
+  }
+  nav .nav-content .navigation-content .navigation ul {
+    width: 100%;
+    position: relative;
+    z-index: 1000;
+    float: right !important;
+  }
+  nav .nav-content .navigation-content .navigation ul li {
+    width: 100px;
+    display: block !important;
+    background-image: none !important;
+    float: right !important;
+  }
+  nav .nav-content .navigation-content .navigation ul li a {
+    float: right;
+  }
+  nav .nav-content .navigation-content .navigation ul li:last-child {
+    display: none !important;
+  }
+  nav .nav-content .navigation-content .toggle-menu {
+    display: block !important;
+    float: right;
+    right: 0;
+    top: 50px;
+  }
+  /*END nav*/
+}
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1024px) and (max-width: 1334px) {
+  /*nav*/
+  nav {
+    /*nav-content*/
+    /*END nav-content*/
+  }
+  nav .nav-content {
+    width: 100%;
+    position: relative;
+    height: 150px;
+    /*navigation*/
+  }
+  nav .nav-content .navigation-content {
+    width: 100%;
+    height: 100px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    /*navigation*/
+    /*END navigation*/
+  }
+  nav .nav-content .navigation-content .navigation {
+    width: 820px !important;
+    position: absolute;
+    top: 60px;
+    left: -39%;
+  }
+  /*END nav*/
+}
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+  /* Styles */
+}
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* Styles */
+}
