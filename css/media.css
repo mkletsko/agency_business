@@ -1,109 +1,490 @@
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+/* END Extra small devices (phones, 320px) and 768px */
+@media (max-width: 767px) {
   /* Styles */
-}
-/* Smartphones (landscape) ----------- */
-@media only screen and (min-width: 321px) {
-  /* Styles */
-}
-/* Smartphones (portrait) ----------- */
-@media only screen and (max-width: 320px) {
-  /* Styles */
-}
-/* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* Styles */
-}
-/* iPads (landscape) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-  /* Styles */
-}
-/* iPads (portrait) ----------- */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* header */
+  header div.header-content {
+    width: 100%;
+    font-size: 0.9em;
+    /*20px*/
+    /*16px*/
+    /* header-email */
+    /* END header-email */
+    /* header number */
+    /* END header number */
+  }
+  header div.header-content div.header-email {
+    width: 65%;
+  }
+  header div.header-content div.header-email a {
+    margin-left: 10px;
+    float: left;
+  }
+  header div.header-content div.header-email a.info-business {
+    float: left;
+  }
+  header div.header-content div.header-email a.facebook-icon {
+    float: left;
+    margin-left: 15px;
+  }
+  header div.header-content div.header-number {
+    width: 34%;
+  }
+  header div.header-content div.header-number a {
+    float: right;
+    margin-right: -10px;
+  }
+  /* END header */
   /*nav*/
   nav {
+    margin-bottom: -45px;
     /*nav-content*/
-    /*END nav-content*/
+    /* END nav-content */
   }
-  nav .nav-content {
-    position: relative;
-    padding: 0;
-    z-index: 1000;
-    /*navigation*/
-  }
-  nav .nav-content .navigation-content {
-    position: relative;
-    /*navigation*/
-    /*END navigation*/
-  }
-  nav .nav-content .navigation-content .navigation {
-    position: absolute;
-    background-color: red;
-    max-width: 220px;
-    right: 0;
-    top: 50px;
-  }
-  nav .nav-content .navigation-content .navigation ul {
+  nav div.nav-content {
     width: 100%;
-    position: relative;
+    overflow: hidden;
+    margin-top: 30px;
+    /* navigation */
+    /* END navigation */
+  }
+  nav div.nav-content div.nav-logo {
+    width: 100%;
+    float: none;
+    margin: 0 auto;
+  }
+  nav div.nav-content div.nav-logo img {
+    display: block;
+    margin: 0 auto;
+  }
+  nav div.nav-content .nav-toggle {
+    margin: 20px auto 0;
+    float: none;
+    display: block;
+  }
+  nav div.nav-content div.navigation {
+    width: 98%;
+    display: none;
     z-index: 1000;
-    float: right !important;
+    position: absolute;
+    background-color: #f3f3f3;
+    left: 1%;
+    right: 1%;
+    top: 165px;
   }
-  nav .nav-content .navigation-content .navigation ul li {
-    width: 100px;
-    display: block !important;
-    background-image: none !important;
-    float: right !important;
+  nav div.nav-content div.navigation ul.ul-navigation {
+    width: 100%;
+    padding: 0;
+    text-align: center;
   }
-  nav .nav-content .navigation-content .navigation ul li a {
-    float: right;
+  nav div.nav-content div.navigation ul.ul-navigation li {
+    padding: 3px 0;
+    width: 100%;
+    display: block;
+    background-image: none;
+    border-bottom: 1px solid #e2e2e2;
   }
-  nav .nav-content .navigation-content .navigation ul li:last-child {
-    display: none !important;
+  nav div.nav-content div.navigation ul.ul-navigation li:last-child a.free-button {
+    background-color: #f3f3f3 !important;
+    padding: 3px 0 !important;
+    margin-top: 0;
+    border-style: none;
+    color: #424242;
+    -webkit-transition: none;
+            transition: none;
   }
-  nav .nav-content .navigation-content .toggle-menu {
-    display: block !important;
-    float: right;
-    right: 0;
-    top: 50px;
+  nav div.nav-content div.navigation ul.ul-navigation li:last-child a.navigation-active {
+    color: #de2b24 !important;
   }
-  /*END nav*/
+  nav div.nav-content div.navigation ul.ul-navigation li:last-child a:link:not(a.navigation-active) {
+    color: #424242;
+  }
+  nav div.nav-content div.navigation ul.ul-navigation li:last-child a:visited {
+    color: #900;
+  }
+  nav div.nav-content div.navigation ul.ul-navigation li:last-child a:hover {
+    color: #de2b24;
+    -webkit-transition: 0.5s;
+            transition: 0.5s;
+  }
+  nav div.nav-content div.navigation ul.ul-navigation li:last-child a:active {
+    color: #f86e69;
+  }
+  /* END nav */
+  /* banner */
+  .banner div.banner-content div.banner-header {
+    color: white;
+  }
+  .banner div.banner-content div.banner-header h1 {
+    font-size: 2.8em;
+    margin-bottom: 25px;
+  }
+  .banner div.banner-content div.banner-header h3 {
+    font-size: 1.5em;
+    font-weight: lighter;
+  }
+  .banner div.banner-content a div.banner-button {
+    width: 23.57%;
+    /*330px*/
+    /*1400px*/
+    min-width: 270px;
+    padding: 10px 0;
+    margin: 0 auto;
+    font-size: 1.1em;
+  }
+  /* END banner */
+  /* block-about-us */
+  .block-about-us div.block-about-us-content h2 {
+    font-size: 2.5em;
+  }
+  .block-about-us div.block-about-us-content span.h2-text {
+    font-size: 1.3em;
+    padding-bottom: 15px;
+  }
+  .block-about-us div.block-about-us-content div.about-info {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  /* END block-about-us */
+  /* block-our-approch */
+  .block-our-approch {
+    /* END block-our-approch-content */
+  }
+  .block-our-approch .block-our-approch-content {
+    /* END our-approch-content for odd */
+    /* our-approch-content  our-approch-.... */
+    /* END our-approch-content  our-approch-.... */
+    /* our-approch-content for even */
+    /* our-approch-content for even */
+  }
+  .block-our-approch .block-our-approch-content h2 {
+    font-size: 2.5em;
+  }
+  .block-our-approch .block-our-approch-content span.h2-text {
+    font-size: 1.3em;
+    padding-bottom: 15px;
+  }
+  .block-our-approch .block-our-approch-content .our-approch:nth-child(odd) {
+    /* our-approch-number */
+    /* END our-approch-number */
+    /* our-approch-text */
+    /* END our-approch-text */
+  }
+  .block-our-approch .block-our-approch-content .our-approch:nth-child(odd) div.approch-img {
+    width: 100%;
+    height: 50%;
+    padding-top: 1%;
+  }
+  .block-our-approch .block-our-approch-content .our-approch:nth-child(odd) div.approch-img img {
+    margin: 0 auto;
+    max-width: 50%;
+    height: auto;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+  }
+  .block-our-approch .block-our-approch-content .our-approch:nth-child(odd) div.our-approch-number {
+    width: 20%;
+    left: 70%;
+    /*286px*/
+    /*1020px*/
+    top: 5%;
+  }
+  .block-our-approch .block-our-approch-content .our-approch:nth-child(odd) div.our-approch-number span.number {
+    margin: 0 auto -6px;
+    font-size: 2em;
+  }
+  .block-our-approch .block-our-approch-content .our-approch:nth-child(odd) div.our-approch-number span {
+    font-size: 1.1em;
+  }
+  .block-our-approch .block-our-approch-content .our-approch:nth-child(odd) div.our-approch-text {
+    width: 100%;
+    height: 50%;
+  }
+  .block-our-approch .block-our-approch-content .our-approch:nth-child(odd) div.our-approch-text h5 {
+    font-size: 1.4em;
+  }
+  .block-our-approch .block-our-approch-content .our-approch:nth-child(odd) div.our-approch-text p {
+    font-size: 0.9em;
+  }
+  .block-our-approch .block-our-approch-content div.our-approch-3 .our-approch-number span.number {
+    margin-bottom: 0px !important;
+  }
+  .block-our-approch .block-our-approch-content div.our-approch-4 .our-approch-number span.number {
+    margin-bottom: 0px !important;
+  }
+  .block-our-approch .block-our-approch-content .our-approch:nth-child(even) {
+    /* our-approch-number */
+    /* END our-approch-number */
+    /* our-approch-text */
+    /* END our-approch-text */
+  }
+  .block-our-approch .block-our-approch-content .our-approch:nth-child(even) div.approch-img {
+    width: 100%;
+    height: 50%;
+    padding-top: 1%;
+  }
+  .block-our-approch .block-our-approch-content .our-approch:nth-child(even) div.approch-img img {
+    margin: 0 auto;
+    max-width: 50%;
+    height: auto;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+  }
+  .block-our-approch .block-our-approch-content .our-approch:nth-child(even) div.our-approch-number {
+    width: 20%;
+    right: 70%;
+    /*286px*/
+    /*1020px*/
+    top: 5%;
+  }
+  .block-our-approch .block-our-approch-content .our-approch:nth-child(even) div.our-approch-number span.number {
+    margin: 0 auto -6px;
+    font-size: 2em;
+  }
+  .block-our-approch .block-our-approch-content .our-approch:nth-child(even) div.our-approch-number span {
+    font-size: 1.1em;
+  }
+  .block-our-approch .block-our-approch-content .our-approch:nth-child(even) div.our-approch-text {
+    width: 100%;
+    height: 50%;
+  }
+  .block-our-approch .block-our-approch-content .our-approch:nth-child(even) div.our-approch-text h5 {
+    text-align: left;
+    padding-left: 6%;
+    /*90px*/
+    /*1020px*/
+    font-size: 1.4em;
+  }
+  .block-our-approch .block-our-approch-content .our-approch:nth-child(even) div.our-approch-text p {
+    text-align: left;
+    font-size: 0.9em;
+  }
+  /* END block-our-approch */
 }
-/* Desktops and laptops ----------- */
-@media only screen and (min-width: 1024px) and (max-width: 1334px) {
-  /*nav*/
+/* END Extra small devices (phones, 320px) and 768px */
+/* Small devices (tablets, 768px and 992px) */
+@media only screen and (min-width: 767px) and (max-width: 992px) {
+  /* nav */
   nav {
     /*nav-content*/
-    /*END nav-content*/
+    /* END nav-content */
   }
-  nav .nav-content {
+  nav div.nav-content {
     width: 100%;
-    position: relative;
-    height: 150px;
-    /*navigation*/
+    overflow: hidden;
+    margin-top: 30px;
+    /* navigation */
+    /* END navigation */
   }
-  nav .nav-content .navigation-content {
+  nav div.nav-content div.nav-logo {
+    float: left;
     width: 100%;
-    height: 100px;
-    padding: 0;
-    margin: 0;
-    position: relative;
-    /*navigation*/
-    /*END navigation*/
+    margin: 0 auto;
   }
-  nav .nav-content .navigation-content .navigation {
-    width: 820px !important;
-    position: absolute;
-    top: 60px;
-    left: -39%;
+  nav div.nav-content div.nav-logo img {
+    display: block;
+    margin: 0 auto;
   }
-  /*END nav*/
+  nav div.nav-content div.navigation {
+    width: 100%;
+    display: block !important;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  nav div.nav-content div.navigation ul.ul-navigation {
+    width: 585px;
+    overflow: auto;
+    float: none;
+    margin: 0 auto;
+    padding-top: 10px;
+  }
+  /* END nav */
+  /* banner */
+  .banner .banner-content div.banner-header {
+    color: white;
+  }
+  .banner .banner-content div.banner-header h1 {
+    font-size: 3.0150000401504em;
+    margin-bottom: 25px;
+  }
+  .banner .banner-content div.banner-header h3 {
+    font-size: 2em;
+    font-weight: lighter;
+  }
+  .banner .banner-content a div.banner-button {
+    width: 310px;
+    /*330px*/
+    /*1400px*/
+    padding: 26px 39px;
+    margin: 0 auto;
+    font-size: 1.3em;
+  }
+  /* END banner */
+  /* block-about-us */
+  .block-about-us div.block-about-us-content h2 {
+    font-size: 3em;
+  }
+  .block-about-us div.block-about-us-content span.h2-text {
+    font-size: 1.7em;
+  }
+  /* END block-about-us */
+  /* block-our-approch */
+  .block-our-approch {
+    /* END block-our-approch-content */
+  }
+  .block-our-approch .block-our-approch-content {
+    /* END our-approch-content for odd */
+    /* our-approch-content  our-approch-.... */
+    /* END our-approch-content  our-approch-.... */
+    /* our-approch-content for even */
+    /* our-approch-content for even */
+  }
+  .block-our-approch .block-our-approch-content h2 {
+    font-size: 3em;
+  }
+  .block-our-approch .block-our-approch-content span.h2-text {
+    font-size: 1.7em;
+  }
+  .block-our-approch .block-our-approch-content .our-approch:nth-child(odd) {
+    /* our-approch-number */
+    /* END our-approch-number */
+    /* our-approch-text */
+    /* END our-approch-text */
+  }
+  .block-our-approch .block-our-approch-content .our-approch:nth-child(odd) div.approch-img img {
+    max-width: 100%;
+    height: auto;
+  }
+  .block-our-approch .block-our-approch-content .our-approch:nth-child(odd) div.our-approch-number {
+    left: 28%;
+    /*286px*/
+    /*1020px*/
+    top: 10%;
+  }
+  .block-our-approch .block-our-approch-content .our-approch:nth-child(odd) div.our-approch-number span.number {
+    margin: 0 auto 10px;
+    font-size: 4em;
+  }
+  .block-our-approch .block-our-approch-content .our-approch:nth-child(odd) div.our-approch-number span {
+    font-size: 1.2em;
+  }
+  .block-our-approch .block-our-approch-content .our-approch:nth-child(odd) .our-approch-text h5 {
+    font-size: 1.4em;
+  }
+  .block-our-approch .block-our-approch-content .our-approch:nth-child(odd) .our-approch-text p {
+    font-size: 0.9em;
+  }
+  .block-our-approch .block-our-approch-content div.our-approch-3 .our-approch-number span.number {
+    margin-bottom: 20px !important;
+  }
+  .block-our-approch .block-our-approch-content div.our-approch-4 .our-approch-number span.number {
+    margin-bottom: 20px !important;
+  }
+  .block-our-approch .block-our-approch-content .our-approch:nth-child(even) {
+    /* our-approch-number */
+    /* END our-approch-number */
+    /* our-approch-text */
+    /* END our-approch-text */
+  }
+  .block-our-approch .block-our-approch-content .our-approch:nth-child(even) div.approch-img img {
+    max-width: 100%;
+    height: auto;
+  }
+  .block-our-approch .block-our-approch-content .our-approch:nth-child(even) div.our-approch-number {
+    right: 28%;
+    /*286px*/
+    /*1020px*/
+    top: 10%;
+  }
+  .block-our-approch .block-our-approch-content .our-approch:nth-child(even) div.our-approch-number span.number {
+    margin: 0 auto 10px;
+    font-size: 4em;
+  }
+  .block-our-approch .block-our-approch-content .our-approch:nth-child(even) div.our-approch-number span {
+    font-size: 1.2em;
+  }
+  .block-our-approch .block-our-approch-content .our-approch:nth-child(even) .our-approch-text h5 {
+    font-size: 1.4em;
+  }
+  .block-our-approch .block-our-approch-content .our-approch:nth-child(even) .our-approch-text p {
+    font-size: 0.9em;
+  }
+  /* END block-our-approch */
 }
-/* Large screens ----------- */
-@media only screen and (min-width: 1824px) {
-  /* Styles */
+/* END Small devices (tablets, 768px and 992px) */
+/* Medium devices (desktops, 992px and 1200px) */
+@media only screen and (min-width: 992px) and (max-width: 1320px) {
+  /* nav */
+  nav {
+    /*nav-content*/
+    /* END nav-content */
+  }
+  nav div.nav-content {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 30px;
+    /* navigation */
+    /* END navigation */
+  }
+  nav div.nav-content div.nav-logo {
+    float: left;
+    width: 100%;
+    margin: 0 auto;
+  }
+  nav div.nav-content div.nav-logo img {
+    display: block;
+    margin: 0 auto;
+  }
+  nav div.nav-content div.navigation {
+    width: 100%;
+    display: block !important;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  nav div.nav-content div.navigation ul.ul-navigation {
+    width: 585px;
+    overflow: auto;
+    float: none;
+    margin: 0 auto;
+    padding-top: 10px;
+  }
+  /* END nav */
+  /* banner */
+  .banner div.banner-content div.banner-header {
+    color: white;
+  }
+  .banner div.banner-content div.banner-header h1 {
+    font-size: 3.0150000401504em;
+    margin-bottom: 25px;
+  }
+  .banner div.banner-content div.banner-header h3 {
+    font-size: 2em;
+    font-weight: lighter;
+  }
+  .banner div.banner-content a div.banner-button {
+    width: 330px;
+    /*330px*/
+    /*1400px*/
+    padding: 26px 39px;
+    margin: 0 auto;
+    font-size: 1.3em;
+  }
+  /* END banner */
 }
-/* iPhone 4 ----------- */
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-  /* Styles */
+/* END Medium devices (desktops, 992px and 1200px) */
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1320px) {
+  /* nav */
+  nav {
+    /*nav-content*/
+    /* END nav-content */
+  }
+  nav div.nav-content {
+    /* navigation */
+    /* END navigation */
+  }
+  nav div.nav-content div.navigation {
+    display: block !important;
+  }
+  /* END nav */
 }
+/* END Large devices (large desktops, 1200px and up) */

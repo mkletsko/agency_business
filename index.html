@@ -7,6 +7,8 @@
     <title>Agency Business</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/font-awesome-4.4.0/css/font-awesome.min.css"/>
     <!--[if IE]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -21,9 +23,7 @@
                     <a href="1.html" class="info-business">
                         info@business.co
                     </a>
-                    <a href="#" class="facebook-icon">
-                        <!--<img src="img/icons/facebook-header.png" alt=""/>-->
-                    </a>
+                    <a href="#" class="facebook-icon"></a>
                 </div>
 
                 <div class="header-number">
@@ -44,24 +44,19 @@
                     <img src="img/logo.png" alt=""/>
                 </div>
 
-                <div class="navigation-content">
-                    <div id="menu" class="navigation">
-                        <ul>
-                            <li><a href="#" class="navigation-active">Home</a></li>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Our Approch</a></li>
-                            <li><a href="#">Our Work</a></li>
-                            <li><a href="#">Analysis</a></li>
-                            <li><a href="#">Get in touch</a></li>
-                            <li><a href="#">Free Consultation</a></li>
-                        </ul>
-                    </div>
+                <a href="#" class="nav-toggle"><span></span></a>
 
-                    <a href="#menu" class="toggle-menu">
-                        <span></span>
-                    </a>
+                <!-- Navigation -->
+                <div class="navigation open">
+                    <ul class="ul-navigation">
+                        <li><a href="#" class="navigation-active">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Approch</a></li>
+                        <li><a href="#">Our Work</a></li>
+                        <li><a href="#" class="free-button">Free Consultation</a></li>
+                    </ul>
 
-                </div>
+                </div><!-- END Navigation -->
 
             </div>
 
@@ -72,10 +67,10 @@
         <div class="banner">
 
             <div class="banner-content">
-                <hgroup>
+                <div class ="banner-header">
                     <h1>We Providing</h1>
                     <h3>Social Media marketing for businesses</h3>
-                </hgroup>
+                </div>
 
                 <a href="#">
                     <div class="banner-button">
@@ -96,17 +91,17 @@
                 <span class="h2-text">We are added our major Services</span>
 
                 <div class="about-info about-info-1">
-                    <div class="facebook-marketing"></div>
+                    <div class="facebook-marketing about-content"></div>
                     <h4>Facebook Marketing</h4>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.  standard dummy text ever</p>
                 </div>
                 <div class="about-info about-info-2">
-                    <div class="landing-creator"></div>
+                    <div class="landing-creator about-content"></div>
                     <h4>landing pages Creation</h4>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.  standard dummy text ever</p>
                 </div>
                 <div class="about-info about-info-3">
-                    <div class="ads-managment"></div>
+                    <div class="ads-managment about-content"></div>
                     <h4>Ads management</h4>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.  standard dummy text ever</p>
                 </div>
@@ -123,7 +118,9 @@
 
                 <!--our-approch our-approch-1-->
                 <div class="our-approch our-approch-1">
-                    <img src="img/approch/approch-1.png" alt=""/>
+                    <div class="approch-img">
+                        <img src="img/approch/approch-1.png" alt=""/>
+                    </div>
 
                     <div class="our-approch-number">
                         <span class="number">1</span>
@@ -145,6 +142,10 @@
                 <!--our-approch our-approch-2-->
                 <div class="our-approch our-approch-2">
 
+                    <div class="approch-img">
+                        <img src="img/approch/approch-2.png" alt=""/>
+                    </div>
+
                     <div class="our-approch-text">
 
                         <h5>Step 2 : Heading Here</h5>
@@ -160,14 +161,14 @@
                         <span>step</span>
                     </div>
 
-                    <img src="img/approch/approch-2.png" alt=""/>
-
                 </div><!--ENDour-approch our-approch-2-->
 
 
                 <!--our-approch our-approch-3-->
                 <div class="our-approch our-approch-3">
-                    <img src="img/approch/approch-3.png" alt=""/>
+                    <div class="approch-img">
+                        <img src="img/approch/approch-3.png" alt=""/>
+                    </div>
 
                     <div class="our-approch-number">
                         <span class="number">3</span>
@@ -189,6 +190,10 @@
                 <!--our-approch our-approch-4-->
                 <div class="our-approch our-approch-4">
 
+                    <div class="approch-img">
+                        <img src="img/approch/approch-4.png" alt=""/>
+                    </div>
+
                     <div class="our-approch-text">
 
                         <h5>Step 4 : Heading Here</h5>
@@ -203,8 +208,6 @@
                         <span class="number">4</span>
                         <span>step</span>
                     </div>
-
-                    <img src="img/approch/approch-4.png" alt=""/>
 
                 </div><!--END our-approch our-approch-4-->
 
@@ -324,6 +327,6 @@
         </footer>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-        <script src="js/common.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
