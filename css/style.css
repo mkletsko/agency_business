@@ -60,8 +60,8 @@ body {
   /* END block-about-us */
   /* block-our-approch */
   /* END block-our-approch */
-  /*our-work*/
-  /*END our-work*/
+  /* our-work */
+  /* END our-work */
   /*fb-analysis*/
   /*END fb-analysis*/
   /*get-in-touch*/
@@ -385,7 +385,7 @@ body .banner .banner-content a {
   text-decoration: none;
 }
 body .banner .banner-content a .banner-button {
-  width: 350px;
+  width: 360px;
   padding: 26px 39px;
   margin: 0 auto;
   -webkit-border-radius: 15px;
@@ -696,18 +696,19 @@ body .our-work {
   background-color: #de2b24;
   color: white;
   padding-bottom: 11.4509803%;
-  /*our-work-content*/
-  /*END our-work-content*/
+  /* our-work-content */
+  /* END our-work-content */
 }
 body .our-work .our-work-content {
   width: 80%;
-  max-width: 1400px;
+  max-width: 1020px;
   margin: 0 auto;
-  margin-top: 8.57142857%;
-  /*120px*/
+  /*8.57142857% - 120px*/
   /*1400px*/
-  /*our-work-block*/
-  /*END our-work-block*/
+  padding-top: 8.57142857%;
+  overflow: hidden;
+  /* our-work-block */
+  /* END our-work-block */
 }
 body .our-work .our-work-content h2 {
   color: white;
@@ -716,49 +717,58 @@ body .our-work .our-work-content span.h2-text {
   background-image: url("../img/icons/line-white.png");
 }
 body .our-work .our-work-content .our-work-block {
+  position: relative;
   float: left;
   width: 50%;
+  max-height: 253px;
   background-color: #f35e59;
-  /*our-work-block*/
-  /*END our-work-block*/
+  /* our-work-block */
+  /* END our-work-block */
 }
-body .our-work .our-work-content .our-work-block .our-work-info {
-  float: left;
-  width: 50%;
-  height: 100%;
-  max-height: 100%;
-  -webkit-box-sizing: content-box;
-     -moz-box-sizing: content-box;
-          box-sizing: content-box;
-}
-body .our-work .our-work-content .our-work-block .our-work-info .landing-copy {
-  display: block;
-  width: 25.549019%;
-  margin-top: 29.41176%;
-  margin-bottom: 19.607843%;
-  margin-left: 30%;
-}
-body .our-work .our-work-content .our-work-block .our-work-info span {
-  display: inline-block;
-  font-size: 2.1747916884148em;
-  font-weight: bold;
-}
-body .our-work .our-work-content .our-work-block .our-work-info span + span {
-  font-size: 1.3383333467168em;
-  font-weight: normal;
-}
-body .our-work .our-work-content .our-work-block img {
+body .our-work .our-work-content .our-work-block .work-img {
   float: right;
   width: 50%;
   height: 100%;
 }
-body .our-work .our-work-content .our-work-block-3 img,
-body .our-work .our-work-content .our-work-block-4 img {
-  float: left;
+body .our-work .our-work-content .our-work-block .work-img img {
+  max-width: 100%;
+  display: block;
+}
+body .our-work .our-work-content .our-work-block .landing-copy {
+  margin: 15% auto;
+  display: block;
+  width: 36px;
+  height: 36px;
+  background-image: url("../img/icons/landing-copy.png");
+}
+body .our-work .our-work-content .our-work-block .our-work-info {
+  position: absolute;
+  display: block;
+  width: 50%;
+  bottom: 0;
+}
+body .our-work .our-work-content .our-work-block .our-work-info span {
+  width: 100%;
+  display: block;
+  font-size: 2em;
+  font-weight: bold;
+}
+body .our-work .our-work-content .our-work-block .our-work-info span + span {
+  font-size: 1.2em;
+  font-weight: normal;
+  margin-bottom: 20%;
+}
+body .our-work .our-work-content .our-work-block-3 .work-img,
+body .our-work .our-work-content .our-work-block-4 .work-img {
+  float: left !important;
 }
 body .our-work .our-work-content .our-work-block-3 .landing-copy,
 body .our-work .our-work-content .our-work-block-4 .landing-copy {
-  margin-left: 40% !important;
+  left: 50%;
+}
+body .our-work .our-work-content .our-work-block-3 .our-work-info,
+body .our-work .our-work-content .our-work-block-4 .our-work-info {
+  left: 50%;
 }
 body .fb-analysis {
   float: left;
@@ -772,7 +782,7 @@ body .fb-analysis {
 }
 body .fb-analysis .fb-analysis-content {
   width: 80%;
-  max-width: 1400px;
+  max-width: 1020px;
   margin: 0 auto;
   margin-top: 7.85714285%;
   /*110px*/
@@ -924,7 +934,7 @@ body .get-in-touch {
 }
 body .get-in-touch .get-in-touch-content {
   width: 80%;
-  max-width: 1400px;
+  max-width: 1020px;
   margin: 0 auto;
   margin-top: 7.85714285%;
   /*110px*/

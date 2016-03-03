@@ -345,7 +345,7 @@ body {
         margin-top: 35px;
         text-decoration: none;
         .banner-button {
-          width: 350px;
+          width: 360px;
           padding: 26px 39px;
           margin: 0 auto;
           border-radius: 15px;
@@ -627,7 +627,7 @@ body {
 
 
 
-  /*our-work*/
+  /* our-work */
   .our-work {
     float: left;
     width: 100%;
@@ -636,12 +636,14 @@ body {
     color: white;
     padding-bottom: 11.4509803%;
 
-    /*our-work-content*/
+    /* our-work-content */
     .our-work-content {
       width: 80%;
-      max-width: 1400px;
-      margin: 0 auto;
-      margin-top: 8.57142857%; /*120px*//*1400px*/
+      max-width: 1020px;
+      margin: 0 auto; /*8.57142857% - 120px*//*1400px*/
+      padding-top: 8.57142857%;
+      overflow: hidden;
+
       h2 {
         color: white;
       }
@@ -649,56 +651,74 @@ body {
         background-image: url("../img/icons/line-white.png");
       }
 
-      /*our-work-block*/
+      /* our-work-block */
       .our-work-block {
+        position: relative;
         float: left;
         width: 50%;
+        max-height: 253px;
         background-color: #f35e59;
 
-        /*our-work-block*/
-        .our-work-info {
-          float: left;
-          width: 50%;
-          height: 100%;
-          max-height: 100%;
-          box-sizing: content-box;
-          .landing-copy {
-            display: block;
-            width: 25.549019%;
-            margin-top: 29.41176%;
-            margin-bottom: 19.607843%;
-            margin-left: 30%;
-          }
-          span {
-            display: inline-block;
-            font-size: 2.1747916884148em;
-            font-weight: bold;
-          }
-          span + span {
-            font-size: 1.3383333467168em;
-            font-weight: normal;
-          }
-        }/*END our-work-block*/
-
-        img {
+        .work-img {
           float: right;
           width: 50%;
           height: 100%;
+
+          img {
+            max-width: 100%;
+            display: block;
+          }
+          
         }
-      }/*END our-work-block*/
+
+        .landing-copy {
+          margin: 15% auto;
+          display: block;
+          width: 36px;
+          height: 36px;
+          background-image: url("../img/icons/landing-copy.png");
+        }
+
+        /* our-work-block */
+        .our-work-info {
+          position: absolute;
+          display: block;
+          width: 50%;
+          bottom: 0;
+
+          span {
+            width: 100%;
+            display: block;
+            font-size: 2em;
+            font-weight: bold;
+          }
+          span + span {
+            font-size: 1.2em;
+            font-weight: normal;
+            margin-bottom: 20%;
+          }
+        }/* END our-work-block */
+      }/* END our-work-block */
 
       .our-work-block-3, .our-work-block-4 {
-        img {
-          float: left;
+
+        .work-img {
+          float: left !important;
         }
+
         .landing-copy {
-          margin-left: 40% !important;
+          left: 50%;
         }
+
+        .our-work-info {
+          left: 50%;
+        }
+
       }
 
-    }/*END our-work-content*/
+    }/* END our-work-content */
 
-  }/*END our-work*/
+  }/* END our-work */
 
   /*fb-analysis*/
   .fb-analysis {
@@ -712,7 +732,7 @@ body {
     /*fb-analysis-content*/
     .fb-analysis-content {
       width: 80%;
-      max-width: 1400px;
+      max-width: 1020px;
       margin: 0 auto;
       margin-top: 7.85714285%; /*110px*//*1400px*/
       h2 {
@@ -844,7 +864,7 @@ body {
     /*get-in-touch-content*/
     .get-in-touch-content {
       width: 80%;
-      max-width: 1400px;
+      max-width: 1020px;
       margin: 0 auto;
       margin-top: 7.85714285%; /*110px*//*1400px*/
       h2 {

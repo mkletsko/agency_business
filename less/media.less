@@ -8,6 +8,14 @@
 @media (max-width : @screen-sm-min) {
   /* Styles */
 
+  h2 {
+    font-size: 2.5em;;
+  }
+  span.h2-text {
+    font-size: 1.3em;
+    padding-bottom: 15px;
+  }
+
   /* header */
   header {
 
@@ -294,6 +302,71 @@
 
   }/* END block-our-approch */
 
+  /* our-work-block */
+  .our-work {
+
+    /* our-work-content */
+    div.our-work-content {
+      max-width: 500px;
+
+      /* our-work-block */
+      div.our-work-block {
+        width: 100% !important;
+
+        .work-img {
+          width: 50%;
+          img {
+            max-width: 100%;
+          }
+        }
+
+        div.our-work-info {
+
+          span {
+            font-size: 1em;
+            margin-bottom: -5%;
+          }
+          span + span {
+            font-size: 0.6em;
+            margin-bottom: 5%;
+          }
+        }
+
+      }/* END our-work-block */
+
+      .our-work-block-1, .our-work-block-3 {
+
+        .work-img {
+          float: left;
+        }
+
+        .our-work-info {
+          left: 50%;
+        }
+
+      }
+
+      .our-work-block-2, .our-work-block-4 {
+
+        .work-img {
+          float: right !important;
+        }
+
+        .landing-copy {
+          left: 0;
+        }
+
+        .our-work-info {
+          left: 0;
+        }
+
+      }
+
+    }/* END our-work-content */
+
+  }/* END our-work-block */
+
+
 }/* END Extra small devices (phones, 320px) and 768px */
 
 /* Small devices (tablets, 768px and 992px) */
@@ -487,6 +560,27 @@ and (max-width : @screen-md-min) {
   }/* END block-our-approch */
 
 
+  /* our-work-content */
+  div.our-work-content {
+
+    /*our-work-block*/
+    div.our-work-block {
+
+      div.our-work-info {
+        span {
+          font-size: 1.25em !important;
+          margin-bottom: 0 !important;
+        }
+        span + span {
+          font-size: 0.9em !important;
+          margin-bottom: 5% !important;
+        }
+      }
+    }
+
+  }/* END our-work-block */
+
+
 }/* END Small devices (tablets, 768px and 992px) */
 
 /* Medium devices (desktops, 992px and 1200px) */
@@ -557,6 +651,25 @@ and (max-width : @screen-lg-min) {
       }
     }
   }/* END banner */
+
+  /* our-work-content */
+  div.our-work-content {
+
+    /*our-work-block*/
+    div.our-work-block {
+
+      div.our-work-info {
+        span {
+          font-size: 1.7em !important;
+        }
+        span + span {
+          font-size: 1em !important;
+          margin-bottom: 15% !important;
+        }
+      }
+    }
+
+  }/* END our-work-block */
 
 
 }/* END Medium devices (desktops, 992px and 1200px) */
