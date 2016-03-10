@@ -10,6 +10,7 @@ h2 {
   font-family: arial, sans-serif;
   font-size: 3.0112500301128em;
   color: #424242;
+  line-height: 40px;
 }
 h5 {
   font-family: arial, sans-serif;
@@ -62,12 +63,12 @@ body {
   /* END block-our-approch */
   /* our-work */
   /* END our-work */
-  /*fb-analysis*/
-  /*END fb-analysis*/
-  /*get-in-touch*/
-  /*END get-in-touch*/
-  /*footer*/
-  /*END footer*/
+  /* fb-analysis */
+  /* END fb-analysis */
+  /* get-in-touch */
+  /* END get-in-touch */
+  /* footer */
+  /* END footer */
 }
 body header {
   width: 100%;
@@ -777,18 +778,17 @@ body .fb-analysis {
   text-align: center;
   background-color: #1287bf;
   color: white;
-  /*fb-analysis-content*/
-  /*END fb-analysis-content*/
+  /* fb-analysis-content */
+  /* END fb-analysis-content */
 }
 body .fb-analysis .fb-analysis-content {
   width: 80%;
   max-width: 1020px;
-  margin: 0 auto;
-  margin-top: 7.85714285%;
-  /*110px*/
+  margin: 7.85714285% auto 0;
+  /*7.85714285% - 110px*/
   /*1400px*/
-  /*form-block*/
-  /*END form-block*/
+  /* form-block */
+  /* END form-block */
 }
 body .fb-analysis .fb-analysis-content h2 {
   color: white;
@@ -800,9 +800,7 @@ body .fb-analysis .fb-analysis-content span.h2-text {
 }
 body .fb-analysis .fb-analysis-content .round {
   height: 65px;
-  margin: 0 auto;
-  margin-top: 18px;
-  margin-bottom: 22px;
+  margin: 18px auto 22px;
   border: 3px solid white;
   -webkit-border-radius: 50%;
           border-radius: 50%;
@@ -834,8 +832,8 @@ body .fb-analysis .fb-analysis-content .form-block {
   background-color: white;
   -webkit-border-radius: 5px;
           border-radius: 5px;
-  /*#form-application*/
-  /*END #form-application*/
+  /* #form-application */
+  /* END #form-application */
 }
 body .fb-analysis .fb-analysis-content .form-block #circle {
   position: absolute;
@@ -852,21 +850,20 @@ body .fb-analysis .fb-analysis-content .form-block #circle img {
   margin: 32.5%;
 }
 body .fb-analysis .fb-analysis-content .form-block span {
-  font-family: Helvetica-Normal, sans-serif;
+  display: block;
   font-size: 1.254687512547em;
   color: #828282;
 }
 body .fb-analysis .fb-analysis-content .form-block #form-application {
-  margin: 0 auto;
-  margin-top: 5.8651026%;
-  /*40px*/
+  margin: 5.8651026% auto 0;
+  /*5.8651026% 40px*/
   /*682px*/
   width: 64.80938416%;
   /*443px*/
   /*682*/
-  /*����� ����� ��� �����*/
-  /*style for button*/
-  /*END style for button*/
+  /* ����� ����� ��� ����� */
+  /* style for button */
+  /* END style for button */
 }
 body .fb-analysis .fb-analysis-content .form-block #form-application #your-name,
 body .fb-analysis .fb-analysis-content .form-block #form-application #contact-number,
@@ -896,7 +893,7 @@ body .fb-analysis .fb-analysis-content .form-block #form-application #company-na
           box-shadow: 0 0 5px #1287bf;
 }
 body .fb-analysis .fb-analysis-content .form-block #form-application .applicationButton {
-  width: 36.117381%;
+  width: 160px;
   /*160px*/
   /*443px*/
   height: 45px;
@@ -929,20 +926,19 @@ body .get-in-touch {
   text-align: center;
   background-color: #2a2a2a;
   color: white;
-  /*get-in-touch-content*/
-  /*END get-in-touch-content*/
+  /* get-in-touch-content */
+  /* END get-in-touch-content */
 }
 body .get-in-touch .get-in-touch-content {
   width: 80%;
   max-width: 1020px;
-  margin: 0 auto;
-  margin-top: 7.85714285%;
-  /*110px*/
+  margin: 7.85714285% auto 0;
+  /*7.85714285% 110px*/
   /*1400px*/
-  /*social-link*/
-  /*END social-link*/
-  /*form subscribe*/
-  /*form subscribe*/
+  /* social-link */
+  /* END social-link */
+  /* form subscribe */
+  /* END form subscribe */
 }
 body .get-in-touch .get-in-touch-content h2 {
   font-size: 2.4257291909242em;
@@ -955,10 +951,19 @@ body .get-in-touch .get-in-touch-content span.h2-text {
 }
 body .get-in-touch .get-in-touch-content .social-link {
   margin-top: 27px;
-  /*ul-social*/
-  /*END ul-social*/
+  /* ul-social */
+  /* END ul-social */
 }
-body .get-in-touch .get-in-touch-content .social-link .ul-social a li {
+body .get-in-touch .get-in-touch-content .social-link .ul-social {
+  overflow: auto;
+  margin: 0 auto;
+  width: 265px;
+}
+body .get-in-touch .get-in-touch-content .social-link .ul-social li {
+  float: left;
+  list-style-type: none;
+}
+body .get-in-touch .get-in-touch-content .social-link .ul-social li a {
   display: inline-block;
   width: 50px;
   height: 50px;
@@ -968,26 +973,25 @@ body .get-in-touch .get-in-touch-content .social-link .ul-social a li {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
-  background-repeat: no-repeat;
-  background-position: center;
+  background: no-repeat center;
   border: 2px solid #515151;
   -webkit-border-radius: 4px;
           border-radius: 4px;
 }
-body .get-in-touch .get-in-touch-content .social-link .ul-social a li:hover {
+body .get-in-touch .get-in-touch-content .social-link .ul-social li a:hover {
   border: 2px solid #de2b24;
 }
-body .get-in-touch .get-in-touch-content .social-link .ul-social a .get-facebook {
+body .get-in-touch .get-in-touch-content .social-link .ul-social .get-facebook {
   background-image: url("../img/icons/get-facebook.png");
   background-position-x: 20px;
 }
-body .get-in-touch .get-in-touch-content .social-link .ul-social a .get-twitter {
+body .get-in-touch .get-in-touch-content .social-link .ul-social .get-twitter {
   background-image: url("../img/icons/get-twitter.png");
 }
-body .get-in-touch .get-in-touch-content .social-link .ul-social a .get-google-plus {
+body .get-in-touch .get-in-touch-content .social-link .ul-social .get-google-plus {
   background-image: url("../img/icons/get-google-plus.png");
 }
-body .get-in-touch .get-in-touch-content .social-link .ul-social a .get-linkedin {
+body .get-in-touch .get-in-touch-content .social-link .ul-social .get-linkedin {
   background-image: url("../img/icons/get-linkedin.png");
   margin-right: 0;
 }
@@ -1026,9 +1030,7 @@ body .get-in-touch .get-in-touch-content .subscribe .email-subscribe:focus {
           box-shadow: none;
 }
 body .get-in-touch .get-in-touch-content .subscribe .button-subscribe {
-  width: 14.705882%;
-  /*150px*/
-  /*1020px*/
+  width: 150px;
   height: 52px;
   margin-top: 26px;
   -webkit-box-sizing: border-box;
@@ -1051,9 +1053,9 @@ body footer {
   height: 70px;
   clear: both;
   background-color: #515151;
-  line-height: 4.5em;
   text-align: center;
   font-size: 1.1710416783772em;
+  padding: 25px 0;
 }
 body footer span {
   color: #cecece;

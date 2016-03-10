@@ -9,6 +9,7 @@ h2 {
   font-family: arial, sans-serif;
   font-size: 3.0112500301128em;
   color: #424242;
+  line-height: 40px;
 }
 
 h5 {
@@ -720,7 +721,7 @@ body {
 
   }/* END our-work */
 
-  /*fb-analysis*/
+  /* fb-analysis */
   .fb-analysis {
     float: left;
     width: 100%;
@@ -729,12 +730,11 @@ body {
     background-color: #1287bf;
     color: white;
 
-    /*fb-analysis-content*/
+    /* fb-analysis-content */
     .fb-analysis-content {
       width: 80%;
       max-width: 1020px;
-      margin: 0 auto;
-      margin-top: 7.85714285%; /*110px*//*1400px*/
+      margin: 7.85714285% auto 0;/*7.85714285% - 110px*//*1400px*/
       h2 {
         color: white;
       }
@@ -746,9 +746,7 @@ body {
 
       .round {
         height: 65px;
-        margin: 0 auto;
-        margin-top: 18px;
-        margin-bottom: 22px;
+        margin: 18px auto 22px;
         border: 3px solid white;
         border-radius: 50%;
         width: 65px;
@@ -766,7 +764,7 @@ body {
         border-bottom: 30px solid white;
       }
 
-      /*form-block*/
+      /* form-block */
       .form-block {
         position: relative;
         width: 66.862745%; /*682px*//*1020*/
@@ -793,18 +791,17 @@ body {
         }
 
         span {
-          font-family: Helvetica-Normal, sans-serif;
+          display: block;
           font-size: 1.254687512547em;
           color: #828282;
         }
 
-        /*#form-application*/
+        /* #form-application */
         #form-application {
-          margin: 0 auto;
-          margin-top: 5.8651026%; /*40px*//*682px*/
+          margin: 5.8651026% auto 0; /*5.8651026% 40px*//*682px*/
           width: 64.80938416%; /*443px*//*682*/
 
-          /*Стили полей для ввода*/
+          /* Стили полей для ввода */
           #your-name, #contact-number, #company-name{
             width: 100%;
             height: 50px;
@@ -824,9 +821,9 @@ body {
             box-shadow: 0 0 5px #1287bf;
           }
 
-          /*style for button*/
+          /* style for button */
           .applicationButton {
-            width: 36.117381%; /*160px*//*443px*/
+            width: 160px; /*160px*//*443px*/
             height: 45px;
             margin-top: 8.3521444%; /*37px*//*443px*/
             margin-bottom: 15.8013544%; /*70px*//*443px*/
@@ -841,18 +838,18 @@ body {
             border: 2px solid #de2b24;
             color: #de2b24;
             transition: 0.5s;
-          }/*END style for button*/
+          }/* END style for button */
 
-        }/*END #form-application*/
+        }/* END #form-application */
 
-      }/*END form-block*/
+      }/* END form-block */
 
-    }/*END fb-analysis-content*/
+    }/* END fb-analysis-content */
 
-  }/*END fb-analysis*/
+  }/* END fb-analysis */
 
 
-  /*get-in-touch*/
+  /* get-in-touch */
   .get-in-touch {
     float: left;
     width: 100%;
@@ -861,12 +858,11 @@ body {
     background-color: #2a2a2a;
     color: white;
 
-    /*get-in-touch-content*/
+    /* get-in-touch-content */
     .get-in-touch-content {
       width: 80%;
       max-width: 1020px;
-      margin: 0 auto;
-      margin-top: 7.85714285%; /*110px*//*1400px*/
+      margin: 7.85714285% auto 0;/*7.85714285% 110px*//*1400px*/
       h2 {
         font-size: 2.4257291909242em;
         color: white;
@@ -877,27 +873,32 @@ body {
         background-image: none;
       }
 
-      /*social-link*/
+      /* social-link */
       .social-link {
         margin-top: 27px;
-        /*ul-social*/
+        /* ul-social */
         .ul-social {
-          a {
+          overflow: auto;
+          margin: 0 auto;
+          width: 265px;
             li{
-              display: inline-block;
-              width: 50px;
-              height: 50px;
-              margin-right: 20px; /*20px*//*255px*/
-              box-sizing: border-box;
-              background-repeat: no-repeat;
-              background-position: center;
-              border: 2px solid #515151;
-              border-radius: 4px;
+              float: left;
+              list-style-type: none;
+              a {
+                display: inline-block;
+                width: 50px;
+                height: 50px;
+                margin-right: 20px; /*20px*//*255px*/
+                box-sizing: border-box;
+                background: no-repeat center;
+                border: 2px solid #515151;
+                border-radius: 4px;
+              }
+              a:hover {
+                border: 2px solid #de2b24;
+              }
             }
 
-            li:hover {
-              border: 2px solid #de2b24;
-            }
             .get-facebook {
               background-image: url("../img/icons/get-facebook.png");
               background-position-x: 20px;
@@ -913,10 +914,10 @@ body {
               margin-right: 0;
             }
 
-          }
-        }/*END ul-social*/
 
-      }/*END social-link*/
+        }/* END ul-social */
+
+      }/* END social-link */
 
       .h2-text {
         margin-top: 35px;
@@ -924,7 +925,7 @@ body {
         color: #cecece;
       }
 
-      /*form subscribe*/
+      /* form subscribe */
       .subscribe {
         width: 100%; /*682px*//*1020*/
         margin-top: 33px;
@@ -944,7 +945,7 @@ body {
           box-shadow: none;
         }
         .button-subscribe {
-          width: 14.705882%; /*150px*//*1020px*/
+          width: 150px;
           height: 52px;
           margin-top: 26px;
           box-sizing: border-box;
@@ -958,21 +959,21 @@ body {
           color: #515151;
           transition: 0.5s;
         }
-      }/*form subscribe*/
+      }/* END form subscribe */
 
-    }/*END get-in-touch-content*/
+    }/* END get-in-touch-content */
 
-  }/*END get-in-touch*/
+  }/* END get-in-touch */
 
-  /*footer*/
+  /* footer */
   footer {
     width: 100%;
     height: 70px;
     clear: both;
     background-color: #515151;
-    line-height: 4.5em;
     text-align: center;
     font-size: 1.1710416783772em;
+    padding: 25px 0;
     span {
       color: #cecece;
       a {
@@ -980,7 +981,7 @@ body {
         text-decoration: none;
       }
     }
-  }
-  /*END footer*/
+  }/* END footer */
+
 
 }/*END body*/
