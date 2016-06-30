@@ -1,4 +1,4 @@
-# ignore folder node_modules for gulp
-node_modules/
 .idea/
 temp/
+# ignore folder node_modules for gulp
+node_modules/
